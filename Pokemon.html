@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Pokemon Characters</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="Pokemon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" 
+    rel="stylesheet">
+  
+  </head>
+  <body class="banner" >
+    <div class="bar">
+      <img src="pictures/pok.png" class="logo">
+      <ul>
+        <li><a href="#pi" onclick="scrollToSection('pi')">Pichu</a></li>
+        <li><a href="#bu" onclick="scrollToSection('bu')">Bulbasaur</a></li>
+        <li><a href="#ch" onclick="scrollToSection('ch')">charmander</a></li>
+        <li><a href="#sq" onclick="scrollToSection('sq')">Squirtle</a></li>
+        <li><a href="#tr" onclick="scrollToSection('tr')">Treecko</a></li>
+        <br>
+        <br>
+        <li><a href="#to" onclick="scrollToSection('to')">Torchic</a></li>
+        <li><a href="#mu" onclick="scrollToSection('mu')">Mudkip</a></li>
+        <li><a href="#chi" onclick="scrollToSection('chi')">Chimchar</a></li>
+        <li><a href="#pipe" onclick="scrollToSection('pipe')">Piplup</a></li>
+        <li><a href="#sni" onclick="scrollToSection('sni')">Snivy</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">BACK HOME</a></li>
+      </ul>
+    </div>
+    <h1 class="title pokemon-section">10 CHARACTERS EVOLUTION</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="pika pokemon-section" id="pi">
+        <p class="pika-name">PICHU EVOLUTION</p>
+        <img class="pichu" src="pictures/pichu.png" alt="Pichu" width="340" height="340" onmouseover="showInfo('pichu-info')" onmouseout="hideInfo('pichu-info')">
+        <img class="arr" src="pictures/arrow.png">
+        <img class="pik" src="pictures/pikachu.png" alt="Pikachu" width="340" height="340" onmouseover="showInfo('pikachu-info')" onmouseout="hideInfo('pikachu-info')">
+        <img class="arr" src="pictures/arrow.png">
+        <img class="raichu" src="pictures/raichu.png" alt="Raichu" width="420" height="340" onmouseover="showInfo('raichu-info')" onmouseout="hideInfo('raichu-info')">
+        <p class="p-info" id="pichu-info">
+          <strong>Pichu</strong> is an Electric-type Pokémon introduced in Generation II.
+          <br>
+          It evolves into <strong>Pikachu</strong> when leveled up with high friendship.
+          <br>
+        </p>
+        <p class="p-info" id="pikachu-info">
+          <strong>Pikachu</strong> is an Electric-type Pokémon introduced in Generation I.
+          <br>
+          It evolves from <strong>Pichu</strong> when leveled up with high friendship to <strong>Pikachu</strong>
+          and evolves into <strong>Raichu</strong> when exposed to a Thunder Stone.
+          <br>
+        </p>
+        <p class="p-info" id="raichu-info">
+          <strong>Raichu</strong> is an Electric-type Pokémon introduced in Generation I.
+          <br>
+          It is the evolved form of <strong>Pikachu</strong> when exposed to a Thunder Stone.
+          <br>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="bulba pokemon-section" id="bu">
+          <p class="bulba-name">BULBASAUR EVOLUTION</p>
+          <img class="baba" src="pictures/bulbsaur.png" alt="Bulbasaur" width="350" height="350" onmouseover="showInfo('bulba-info')" onmouseout="hideInfo('bulba-info')">
+         <img class="arr" src="pictures/arrow.png">
+          <img class="ivy" src="pictures/ivysaur.png" alt="Ivysaur" width="400" height="400" onmouseover="showInfo('ivysaur-info')" onmouseout="hideInfo('ivysaur-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="venu" src="pictures/venusaur.png" alt="Venusaur" width="380" height="380" onmouseover="showInfo('venusaur-info')" onmouseout="hideInfo('venusaur-info')">
+          <p class="b-info" id="bulba-info">
+            <strong>Bulbasaur</strong> is a dual-type Grass/Poison Pokémon introduced in Generation I.
+            <br>
+            It evolves into <strong>Ivysaur</strong> starting at level 16, which evolves into <strong>Venusaur</strong> starting at level 32.
+            <br>
+          </p>
+          <p class="b-info" id="ivysaur-info">
+            <strong>Ivysaur</strong> is a dual-type Grass/Poison Pokémon introduced in Generation I.
+            <br>
+            It evolves from <strong>Bulbasaur</strong> starting at level 16 and evolves into <strong>Venusaur</strong> starting at level 32.
+            <br>
+          </p>
+          <p class="b-info" id="venusaur-info">
+            <strong>Venusaur</strong> is a dual-type Grass/Poison Pokémon introduced in Generation I.
+            <br>
+            It is the final form of <strong>Bulbasaur</strong> and evolves from <strong>Ivysaur</strong> starting at level 32.
+          </p>
+          
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="char pokemon-section" id="ch">
+          <p class="char-name">CHARMANDER EVOLUTION</p>
+          <img class="mand" src="pictures/charmander.png" alt="Charrmaner" width="400" height="400" onmouseover="showInfo('charm-info')" onmouseout="hideInfo('charm-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="charm" src="pictures/charmeleon.png" alt="Charmeleon" width="400" height="400" onmouseover="showInfo('charme-info')" onmouseout="hideInfo('charme-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="chari" src="pictures/charizard.png" alt="Charizard" width="400" height="400" onmouseover="showInfo('chari-info')" onmouseout="hideInfo('chari-info')">
+          
+          <p class="c-info" id="charm-info">
+            <strong>Charmander</strong> is a Fire-type Pokémon introduced in Generation I.
+            <br>
+            It evolves into <strong>Charmeleon</strong> starting at level 16, which evolves into <strong>Charizard</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="c-info" id="charme-info">
+            <strong>Charmeleon</strong> is a Fire-type Pokémon introduced in Generation I.
+            <br>
+            It evolves from <strong>Charmander</strong> starting at level 16 and evolves into <strong>Charizard</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="c-info" id="chari-info">
+            <strong>Charizard</strong> is a Fire/Flying-type Pokémon introduced in Generation I.
+            <br>
+            It is the final form of <strong>Charmander</strong> and evolves from <strong>Charmeleon</strong> starting at level 36.
+          </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="squ pokemon-section" id="sq">
+          <p class="squ-name">SQUIRTLE EVOLUTION</p>
+          <img src="pictures/squirtle.png" alt="Squirtle" width="350" height="350" onmouseover="showInfo('squirt-info')" onmouseout="hideInfo('squirt-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="war" src="pictures/wartortle.png" alt="Wartorltle" width="350" height="350" onmouseover="showInfo('wart-info')" onmouseout="hideInfo('wart-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="blas" src="pictures/blastoise.png" alt="Blastoise" width="350" height="350" onmouseover="showInfo('blast-info')" onmouseout="hideInfo('blast-info')">
+          
+          <p class="s-info" id="squirt-info">
+            <strong>Squirtle</strong> is a Water-type Pokémon introduced in Generation I.
+            <br>
+            It evolves into <strong>Wartortle</strong> starting at level 16, which evolves into <strong>Blastoise</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="s-info" id="wart-info">
+            <strong>Wartortle</strong> is a Water-type Pokémon introduced in Generation I.
+            <br>
+            It evolves from <strong>Squirtle</strong> starting at level 16 and evolves into <strong>Blastoise</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="s-info" id="blast-info">
+            <strong>Blastoise</strong> is a Water-type Pokémon introduced in Generation I.
+            <br>
+            It is the final form of <strong>Squirtle</strong> and evolves from <strong>Wartortle</strong> starting at level 36.
+          </p>            
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="tre pokemon-section" id="tr">
+          <p class="tre-name">TREECKO EVOLUTION</p>
+          <img src="pictures/treecko.png" alt="Treecko" width="350" height="350" onmouseover="showInfo('tree-info')" onmouseout="hideInfo('tree-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="gro" src="pictures/grovyle.png" alt="Grovyle" width="330" height="425" onmouseover="showInfo('grov-info')" onmouseout="hideInfo('grov-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="sce" src="pictures/sceptile.png" alt="Sceptile" width="380" height="380" onmouseover="showInfo('scept-info')" onmouseout="hideInfo('scept-info')">
+          
+          <p class="t-info" id="tree-info">
+            <strong>Treecko</strong> is a Grass-type Pokémon introduced in Generation III.
+            <br>
+            It evolves into <strong>Grovyle</strong> starting at level 16, which evolves into <strong>Sceptile</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="t-info" id="grov-info">
+            <strong>Grovyle</strong> is a Grass-type Pokémon introduced in Generation III.
+            <br>
+            It evolves from <strong>Treecko</strong> starting at level 16 and evolves into <strong>Sceptile</strong> starting at level 36.
+            <br>           
+          </p>
+          <p class="t-info" id="scept-info">
+            <strong>Sceptile</strong> is a Grass-type Pokémon introduced in Generation III.
+            <br>
+            It is the final form of <strong>Treecko</strong> and evolves from <strong>Grovyle</strong> starting at level 36.
+          </p>  
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="to pokemon-section" id="to">
+          <p class="to-name">TORCHIC EVOLUTION</p>
+          <img src="pictures/torchic.png" alt="Torchic" width="280" height="350" onmouseover="showInfo('torch-info')" onmouseout="hideInfo('torch-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="com" src="pictures/combusken.png" alt="Combusken" width="320" height="360" onmouseover="showInfo('comb-info')" onmouseout="hideInfo('comb-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="bla" src="pictures/blaziken.png" alt="Blaziken" width="350" height="350" onmouseover="showInfo('blaz-info')" onmouseout="hideInfo('blaz-info')">
+          
+          <p class="to-info" id="torch-info">
+            <strong>Torchic</strong> is a Fire-type Pokémon introduced in Generation III.
+            <br>
+            It evolves into <strong>Combusken</strong> starting at level 16, which evolves into <strong>Blaziken</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="to-info" id="comb-info">
+            <strong>Combusken</strong> is a Fire/Fighting-type Pokémon introduced in Generation III.
+            <br>
+            It evolves from <strong>Torchic</strong> starting at level 16 and evolves into <strong>Blaziken</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="to-info" id="blaz-info">
+            <strong>Blaziken</strong> is a Fire/Fighting-type Pokémon introduced in Generation III.
+            <br>
+            It is the final form of <strong>Torchic</strong> and evolves from <strong>Combusken</strong> starting at level 36. 
+          </p>  
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="mud pokemon-section" id="mu">
+          <p class="mud-name">MUDKIP EVOLUTION</p>
+          <img class="kip" src="pictures/mudkip.png" alt="Mudkip" width="300" height="350" onmouseover="showInfo('mud-info')" onmouseout="hideInfo('mud-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="mars" src="pictures/Marshtomp.png" alt="Marshtomp" width="300" height="350" onmouseover="showInfo('mars-info')" onmouseout="hideInfo('mars-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="swam" src="pictures/Swampert.png" alt="Swampert" width="350" height="350" onmouseover="showInfo('swam-info')" onmouseout="hideInfo('swam-info')">
+          
+          <p class="m-info" id="mud-info">
+            <strong>Mudkip</strong> is a Water-type Pokémon introduced in Generation III.
+            <br>
+            It evolves into <strong>Marshtomp</strong> starting at level 16, which evolves into <strong>Swampert</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="m-info" id="mars-info">
+            <strong>Marshtomp</strong> is a Water/Ground-type Pokémon introduced in Generation III.
+            <br>
+            It evolves from <strong>Mudkip</strong> starting at level 16 and evolves into <strong>Swampert</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="m-info" id="swam-info">
+            <strong>Swampert</strong> is a Water/Ground-type Pokémon introduced in Generation III.
+            <br>
+            It is the final form of <strong>Mudkip</strong> and evolves from <strong>Marshtomp</strong> starting at level 36.
+          </p>  
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="chim pokemon-section" id="chi">
+          <p class="chim-name">CHIMCHAR EVOLUTION</p>
+          <img class="char" src="pictures/Chimchar.png" alt="Chimchar" width="220" height="350" onmouseover="showInfo('chim-info')" onmouseout="hideInfo('chim-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="monf" src="pictures/Monferno.png" alt="Monferno" width="370" height="350" onmouseover="showInfo('monf-info')" onmouseout="hideInfo('monf-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="inf" src="pictures/Infernape.png" alt="Infernape" width="320" height="350" onmouseover="showInfo('infer-info')" onmouseout="hideInfo('infer-info')">
+          
+          <p class="ch-info" id="chim-info">
+            <strong>Chimchar</strong> is a Fire-type Pokémon introduced in Generation IV.
+            <br>
+            It evolves into <strong>Monferno</strong> starting at level 14, which evolves into <strong>Infernape</strong> starting at level 36.
+            <br>  
+          </p>
+          <p class="ch-info" id="monf-info">
+            <strong>Monferno</strong> is a Fire/Fighting-type Pokémon introduced in Generation IV.
+            <br>
+            It evolves from <strong>Chimchar</strong> starting at level 14 and evolves into <strong>Infernape</strong> starting at level 36.
+            <br> 
+          </p>
+          <p class="ch-info" id="infer-info">
+            <strong>Infernape</strong> is a Fire/Fighting-type Pokémon introduced in Generation IV.
+            <br>
+            It is the final form of <strong>Chimchar</strong> and evolves from <strong>Monferno</strong> starting at level 36.
+          </p>  
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="pip pokemon-section" id="pipe">
+        <p class="pip-name">PIPLUP EVOLUTION</p>
+          <img class="lup" src="pictures/Piplup.png" alt="Piplup" width="250" height="350" onmouseover="showInfo('pip-info')" onmouseout="hideInfo('pip-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="prin" src="pictures/Prinplup.png" alt="Prinplup" width="430" height="400" onmouseover="showInfo('prin-info')" onmouseout="hideInfo('prin-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="emp" src="pictures/Empoleon.png" alt="Empoleon" width="350" height="410" onmouseover="showInfo('empo-info')" onmouseout="hideInfo('empo-info')">
+          
+          <p class="pi-info" id="pip-info">
+            <strong>Piplup</strong> is a Water-type Pokémon introduced in Generation IV.
+            <br>
+            It evolves into <strong>Prinplup</strong> starting at level 16, which evolves into <strong>Empoleon</strong> starting at level 36.
+            <br> 
+          </p>
+          <p class="pi-info" id="prin-info">
+            <strong>Prinplup</strong> is a Water-type Pokémon introduced in Generation IV.
+            <br>
+            It evolves from <strong>Piplup</strong> starting at level 16 and evolves into <strong>Empoleon</strong> starting at level 36.
+            <br>
+          </p>
+          <p class="pi-info" id="empo-info">
+            <strong>Empoleon</strong> is a Water/Steel-type Pokémon introduced in Generation IV.
+            <br>
+            It is the final form of <strong>Piplup</strong> and evolves from <strong>Prinplup</strong> starting at level 36. 
+          </p>  
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="sniv pokemon-section" id="sni">
+        <p class="sniv-name">SNIVY EVOLUTION</p>
+          <img class="sni" src="pictures/snivy.png" alt="Snivy" width="250" height="350" onmouseover="showInfo('sniv-info')" onmouseout="hideInfo('sniv-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="vine" src="pictures/servine.png" alt="Servine" width="330" height="350" onmouseover="showInfo('serv-info')" onmouseout="hideInfo('serv-info')">
+          <img class="arr" src="pictures/arrow.png">
+          <img class="ser" src="pictures/serperior.png" alt="Serperior" width="310" height="350" onmouseover="showInfo('serp-info')" onmouseout="hideInfo('serp-info')">
+          
+            <p class="sn-info" id="sniv-info">
+              <strong>Snivy</strong> is a Grass-type Pokémon introduced in Generation V.
+              <br>
+              It evolves into <strong>Servine</strong> starting at level 17, which evolves into <strong>Serperior</strong> starting at level 36.
+              <br>
+            </p>
+            <p class="sn-info" id="serv-info">
+              <strong>Servine</strong> is a Grass-type Pokémon introduced in Generation V.
+              <br>
+              It evolves from <strong>Snivy</strong> starting at level 17 and evolves into <strong>Serperior</strong> starting at level 36.
+              <br>
+            </p>
+            <p class="sn-info" id="serp-info">
+              <strong>Serperior</strong> is a Grass-type Pokémon introduced in Generation V.
+              <br>
+              It is the final form of <strong>Snivy</strong> and evolves from <strong>Servine</strong> starting at level 36. 
+            </p>  
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+      </div>
+    </div>
+    <!-- Scroll to Top button -->
+    <button onclick="scrollToTop()" class="scroll-top-btn">Scroll to Top</button>
+
+ 
+
+
+    <!-- 3.Hover effect Javascript -->
+    <script>
+     function showInfo(id) {
+    // Hide all info paragraphs within the section
+    const sections = document.querySelectorAll(".pokemon-section");
+    sections.forEach(function (section) {
+      const paragraphs = section.querySelectorAll(".p-info, .b-info, .c-info, .s-info, .t-info, .to-info, .m-info, .ch-info, .pi-info, .sn-info");
+      paragraphs.forEach(function (paragraph) {
+        paragraph.style.display = "none";
+      });
+    });
+
+    // Show the specific info paragraph
+    document.getElementById(id).style.display = "block";
+  }
+
+  function hideInfo(id) {
+    document.getElementById(id).style.display = "none";
+  }
+    // <!-- 4. JavaScript for scrolling effect -->
+
+      function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+    // Show the scroll-to-top button when scrolling down
+    window.onscroll = function() {
+      var scrollBtn = document.querySelector('.scroll-top-btn');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    // 5. JavaScript Scrolling animation with fade in and fade out effect
+    document.addEventListener("DOMContentLoaded", function () {
+    // Select all sections with the class "pokemon-section"
+    const sections = document.querySelectorAll(".pokemon-section");
+
+    // Listen for scroll events
+    window.addEventListener("scroll", function () {
+      let currentSection = null;
+
+      // Check which section is currently in the viewport
+      sections.forEach(function (section) {
+        const isInViewport = isElementInViewport(section);
+
+        if (isInViewport) {
+          currentSection = section;
+        }
+      });
+
+      // Apply fade effects to sections based on their visibility
+      if (currentSection) {
+        sections.forEach(function (section) {
+          if (section === currentSection) {
+            fadeIn(section); // Apply fadeIn effect to the current section
+          } else {
+            fadeOut(section); // Apply fadeOut effect to other sections
+          }
+        });
+      }
+    });
+
+    // Check if an element is in the viewport
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Apply fadeIn effect to an element
+    function fadeIn(element) {
+      element.style.opacity = 1;
+      element.style.transition = "opacity 0.5s ease-in-out";
+    }
+
+    // Apply fadeOut effect to an element
+    function fadeOut(element) {
+      element.style.opacity = 0;
+      element.style.transition = "opacity 0.5s ease-in-out";
+    }
+  });
+
+// 6. toggle effect of the class logo
+  document.addEventListener("DOMContentLoaded", function () {
+    // Delay the toggleLogo function by 5000 milliseconds (2 seconds)
+    setTimeout(toggleLogo, 2000);
+  });
+
+  function toggleLogo() {
+    const logo = document.querySelector('.logo');
+    logo.classList.toggle('hidden'); // Toggle the 'hidden' class
+  }
+    </script>
+    
+  </body>
+</html> 

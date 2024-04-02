@@ -1,0 +1,485 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Julius Sans One;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgb(0,0,0,0.75), rgb(0,0,0,0.75)), url(pictures/pokemon.jpg);
+  background-size:cover ;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: auto;
+  }
+}
+.bar{
+  width:85%;
+  margin:auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .bar {
+    flex-direction:column;
+  }
+}
+.logo{
+  float:left;
+  width: 250px;
+  cursor: pointer;
+}
+
+/* Responsive navigation bar */
+.bar ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .bar ul {
+    display: block;
+    text-align:center;
+    margin-top: 20px;
+  }
+}
+.bar ul li{
+  
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  
+}
+.bar ul li a{
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .bar ul li {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+.bar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+.bar ul li::after{
+  content:'';
+  height: 3px;
+  width: 0;
+  background: #007a96;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+
+}
+.bar ul li:hover::after{
+  width:100%;
+
+}
+
+@media only screen and (max-width: 768px){
+  .bar ul li:hover::after {
+    margin-bottom: 5px;
+     width: 100%;
+   }
+}
+
+
+h1{
+  font-family:Julius Sans One;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.content{
+  
+  position:absolute;
+  top:38%;
+  left:20%;
+  transform: translateY(-50% , -50%);
+  text-align: center;
+  width: 900px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    position: static;
+    top: auto;
+    left: auto;
+    transform:none;
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+.content.p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  
+}
+p{
+  margin-top: 20px;
+  font-family: Julius Sans One;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.title{
+  font-family:'Franklin Gothic Medium';
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 150px;
+  background-image: linear-gradient(
+    45deg,
+    #af8b8c 16.666%, 
+    #E16541 16.666%, 
+    #e1ce41 33.333%, 
+    #F18F43 33.333%, 
+    #5cd6b9 50%, 
+    #8B9862 50%, 
+    #7b6298 66.666%, 
+    #476098 66.666%, 
+    #984766 83.333%, 
+    #A7489B 83.333%);
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+.title:hover{
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+  @keyframes rainbow-text-simple-animation-rev 
+  {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+  }
+  @keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+  
+
+.pika {
+  margin-top: 450px;
+  margin-left: 50px;
+  margin-bottom: 200px;
+  display: inline-block;
+
+}
+.pichu , .raichu , .pik{
+  margin-left: 40px;
+}
+
+.raichu {
+  margin-right: 25px;
+}
+.pika-name{
+  font-family: 'Franklin Gothic Medium';
+  font-size: 50px;
+  font-weight: bold;
+  color:yellow; 
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+.p-info , .b-info , .c-info , .s-info , .t-info , .to-info , .m-info , .ch-info , .pi-info , .sn-info{
+  color:white;
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.bulba{
+  margin-top: 450px;
+  margin-left: 70px;
+  display: inline-block;
+  margin-top:150px;
+  margin-left: 50px;
+  margin-bottom: 200px;
+}
+
+.bulba-name{
+  font-family:'Franklin Gothic Medium';
+  font-size: 50px;
+  font-weight: bold;
+  color:rgba(148, 253, 229, 0.75); 
+  text-align: center;
+  margin-bottom: 60px;
+}   
+
+.ivy , .venu , .chari {
+  margin-left:30px ;
+}
+
+
+.venu{
+  margin-right: 54px;
+}
+
+
+
+.char{
+  margin-top: 450px;
+  margin-left: 20px;
+  display: inline-block;
+  margin-top:150px;
+  margin-left: 50px;
+}
+
+.charm{
+  margin-left: 10px;
+}
+
+
+
+.char-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(220, 107, 20);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+
+.squ{
+  margin-top: 450px;
+  margin-left: 40px;
+  display: inline-block;
+  margin-top:150px;
+  margin-left: 90px ;
+  margin-bottom: 200px;
+}
+
+.squ-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(125, 144, 240);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.war{
+  margin-left: 40px;
+  margin-right: 35px;
+}
+.blas{
+  margin-left: 40px;
+}
+
+.tre , .to , .mud{
+  margin-top: 450px;
+  display: inline-block;
+  margin-top:150px; 
+}
+
+.tre {
+  margin-left: 90px;
+  margin-bottom: 200px;
+}
+.to {
+  margin-left: 125px;
+  margin-bottom: 200px;
+}
+
+.gro , .sce {
+  margin-left: 50px;
+}
+
+.tre-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(137, 204, 71);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.com , .bla , .tor , .mars , .swam {
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+.to-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(223, 179, 58);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.arr {
+  width: 70px;
+  height: 90px;
+  padding-bottom: 135px;
+}
+
+.kip {
+  margin-right: 50px;
+}
+
+.mud {
+  margin-left: 100px;
+ }
+.mud-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(85, 169, 222);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.char{
+  margin-left: 10px;
+}
+
+.chim , .pip{
+  margin-left: 140px;
+}
+.chim-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(212, 136, 43);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 200px;
+  
+}
+
+.char{
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+.monf{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.inf{
+  margin-right: 40px;
+}
+
+.lup , .sni , .vine{
+  margin-right: 50px;
+}
+
+.pip-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(86, 127, 192);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 200px;
+}
+
+.sniv{
+  margin-left: 165px;
+  margin-bottom: 200px;
+}
+
+
+
+.sniv-name{
+  font-family: 'Franklin Gothic Medium';
+  color:rgb(42, 164, 105);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 200px;
+}
+
+.pika img , .bulba img , .char img,  .squ img, .tre img ,  .to img, .mud img, .chim img, .pip img, .sniv img{
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pika img:hover , .bulba img:hover , .char img:hover,  .squ img:hover, 
+.tre img:hover,  .to img:hover, .mud img:hover, .chim img:hover, .pip img:hover, .sniv img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.p-info , .b-info , .c-info , .s-info , .t-info , .to-info , .m-info , .ch-info , .pi-info , .sn-info {
+  display: none;
+}
+
+.pika:hover .p-info , .bulba:hover .b-info , .char:hover .c-info , .squ:hover .s-info , .tre:hover .t-info
+.to:hover .to-info , .mud:hover .m-info , .chim:hover .ch-info , .pip:hover .pi-info , .sniv:hover .sn-info{
+  display: block;
+}
+
+
+.visible{
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+/* Add the styles for the scroll-to-top button here */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: transparent; /* Set the background to transparent */
+  color: #fff;
+  border: 2px solid #081a09; /* Add a border to make it visible */
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Initially hide the button */
+}
+
+.scroll-top-btn:hover {
+  background-color: rgba(76, 175, 80, 0.3); /* Add a subtle hover background color */
+}
+
+
+.logo.hidden {
+  display: none;
+}
+

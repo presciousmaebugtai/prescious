@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon|Home</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="Pokemon.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" 
+    rel="stylesheet">
+
+    <style>
+      /* Add your CSS styles here */
+      .visible {
+        opacity: 0; /* Initially set opacity to 0 */
+        transition: opacity 0.8s ease-in-out; /* Add transition effect */
+      }
+      .visible.show {
+        opacity: 1; /* Change opacity to 1 when the element is in view */
+      }
+
+      /* Scroll-to-top button styles */
+    #scrollToTopBtn { 
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: transparent; /* Set the background to transparent */
+      color: white;
+      border: 1px solid white; /* Add a border for better visibility */
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+}
+
+    #scrollToTopBtn:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* Add a transparent white background on hover */
+}
+    </style>
+  </head>
+  
+  <body class="banner" >
+      <div class="characters">
+        <section>
+          <div>
+            <div class="bar">
+              <img src="pictures/pok.png" class="logo">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="Pokemon.html">CHARACTERS</a></li>
+                </ul>
+            </div>
+            <div class="content">   
+              <h1 id="typing-header">
+              </h1>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p id="typing-paragraph" class="visible">
+                
+                "Pokemon" is a media franchise created by Nintendo, 
+                Game Freak, and Creatures. It was first introduced by 
+                Nintendo in 1996 and has since become one of the most 
+                successful and recognizable franchises in the world. 
+                The name "Pokemon" is a romanized contraction of the 
+                Japanese brand "Pocket Monsters", 
+                often shortened as "PokeMon" in Japanese.
+                <br>
+                <br>
+                The franchise revolves around fictional creatures 
+                called "Pokemon," which humans, known as Pokemon 
+                Trainers, catch and train to battle each other for 
+                sport. The main goal for Pokemon Trainers is often 
+                to become a Pokemon Master by capturing and training 
+                a diverse team of Pokemon, earning Gym Badges, and 
+                ultimately challenging the Elite Four and the Pokemon 
+                League.
+              </p>
+            </div>
+  </body>
+</html> 
+<!-- Scroll-to-top button -->
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+<!-- 1. JavaScript typing animation -->
+<script>
+  const header = document.getElementById("typing-header");
+  const text = "WHAT IS POKEMON?";
+  let i = 0;
+  
+  const typeWriter = () => {
+    if (i < text.length) {
+      header.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 100); // Adjust the delay here for typing speed
+    }
+  };
+  
+  typeWriter();
+ 
+//2. Add Intersection Observer for reveal animation
+const paragraph = document.getElementById("typing-paragraph");
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5 // Adjust the threshold as needed
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show'); // Add 'show' class when in view
+    }
+  });
+}, options);
+
+observer.observe(paragraph);
+
+//Scroll to top animation
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+</script>
+
